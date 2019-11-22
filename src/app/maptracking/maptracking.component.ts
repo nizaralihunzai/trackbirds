@@ -5,13 +5,12 @@ import Feature from 'ol/Feature.js';
 import Map from 'ol/Map.js';
 import View from 'ol/View.js';
 import GeoJSON from 'ol/format/GeoJSON.js';
-import Circle from 'ol/geom/Circle.js';
 import { Tile as TileLayer, Vector as VectorLayer } from 'ol/layer.js';
 import { OSM, Vector as VectorSource } from 'ol/source.js';
-import { Circle as CircleStyle, Fill, Stroke, Style, Icon } from 'ol/style.js';
+import { Circle as CircleStyle, Stroke, Style } from 'ol/style.js';
 import { Point as GeomPoint } from 'ol/geom';
-import { useGeographic, transform, fromLonLat } from 'ol/proj';
-import { getVectorContext } from 'ol/render';
+import { transform, fromLonLat } from 'ol/proj';
+
 
 @Component({
     selector: 'app-maptracking',
